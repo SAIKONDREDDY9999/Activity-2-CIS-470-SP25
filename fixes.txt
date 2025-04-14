@@ -1,0 +1,11 @@
+1. federalTax(): Changed taxableAmount = upperLimit + lowerBound ➝ taxableAmount = upperLimit - lowerBound
+
+2. calculateStateTax(): Fixed logic from income + deductions ➝ income - deductions
+
+3. calculateStateTax(): Fixed division error ➝ multiplied stateTaxableIncome by 0.05 instead of dividing by rate
+
+4. getDeductions(): Confirmed logic correctly adds base + studentLoan + mortgage + medical
+
+5. Typo in test data ('studentLoad') corrected to 'studentLoan'
+
+6. Added debugger and console logs to trace errors during runtime
